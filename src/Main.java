@@ -7,7 +7,10 @@ public class Main {
         simpleQueue.enqueue(500);
         simpleQueue.enqueue(300);
         simpleQueue.enqueue(876);
-        simpleQueue.peek();
+       // simpleQueue.peek();
         simpleQueue.display();
+        System.out.println("Deleted element"+simpleQueue.dequeue());
+        simpleQueue.display();
+
     }
 }
