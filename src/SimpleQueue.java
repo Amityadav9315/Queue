@@ -8,7 +8,7 @@ public class SimpleQueue {
     public SimpleQueue(int capacity){
         this .capacity=capacity;
         this.queue=new int[capacity];
-        this.front=1;
+        this.front=0;
         this.rear=-1;
 
     }
@@ -25,7 +25,7 @@ public class SimpleQueue {
      }
      //Deque: remove the element
     public  int dequeue(){
-        if(front<rear){
+        if(front>rear){
             System.out.println("Queue is empty");
             return -1;
 

@@ -5,6 +5,9 @@ public class Main {
         SimpleQueue simpleQueue=new SimpleQueue(5);
         simpleQueue.enqueue(200);
         simpleQueue.enqueue(500);
+        simpleQueue.enqueue(300);
+        simpleQueue.enqueue(876);
+        simpleQueue.peek();
         simpleQueue.display();
     }
 }
