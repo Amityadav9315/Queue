@@ -20,9 +20,34 @@ public class SimpleQueue {
         }
         rear++;
         queue[rear]=data;
-         System.out.println(data+"this is inserted into the queue");
+         System.out.println(data+" is inserted into the queue");
 
      }
+     //Deque: remove the element
+    public  int dequeue(){
+        if(front>rear){
+            System.out.println("Queue is empty");
+            return -1;
+
+        }
+        int data=queue[front];
+        front++;
+        return data;
+    }
+
+
+    //Peek operation(Last element)
+    public int peek(){
+        if (front > rear) {
+            System.out.println("Queue is empty");
+            return -1;
+        }
+        return  queue[front];
+    }
+    //Display element
+
+    }
+
 
 
 }
