@@ -7,6 +7,11 @@ public class CircularMain {
         circularQueue.enqueue(76);
         circularQueue.enqueue(876);
         circularQueue.display();
+        circularQueue.dequeue();
+        circularQueue.display();
+        circularQueue.dequeue();
+        circularQueue.display();
+
 
     }
 }

@@ -51,8 +51,9 @@ public class CircularQueue {
 
 
         }
-        for(int i=front; i<=rear; i++){
-            System.out.print(queue[i]+ "\t");
+        for(int i=0; i<size; i++){
+            int data=queue[(front+i)%capacity];
+            System.out.print(data +"\t");
         }
         System.out.println();
     }
