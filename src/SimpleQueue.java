@@ -25,7 +25,7 @@ public class SimpleQueue {
      }
      //Deque: remove the element
     public  int dequeue(){
-        if(front>rear){
+        if(front<rear){
             System.out.println("Queue is empty");
             return -1;
 
@@ -51,7 +51,7 @@ public class SimpleQueue {
             return;
         }
         for(int i=front; i<=rear; i++) {
-            System.out.println(queue[i] +"\t");
+            System.out.print(queue[i] +"\t");
 
         }
         System.out.println();
