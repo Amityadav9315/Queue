@@ -52,8 +52,8 @@ public class DeQueue {
             return;
         }
         if (isEmpty()) {
-            front = -1;
-            rear = -1;
+            front = 0;
+            rear = 0;
 
         } else if (rear == capacity - 1) {
             rear = 0;

@@ -6,5 +6,15 @@ public class DequeueTest {
         deQueue.insertRear(23);
         deQueue.insertRear(45);
         deQueue.display();
+        deQueue.insertFront(87);
+        deQueue.insertRear(56);
+        deQueue.display();
+        deQueue.getFront();
+        deQueue.display();
+        deQueue.getRear();
+        deQueue.display();
+        deQueue.deleteFront();
+        deQueue.display();
+
     }
 }
