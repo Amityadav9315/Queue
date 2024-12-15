@@ -135,6 +135,9 @@ public class DeQueue {
          System.out.println();
 
      }
+     public int size(){
+        return size;
+     }
 
 
 
