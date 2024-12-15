@@ -81,7 +81,33 @@ public class DeQueue {
         } else {
             front++;
         }
+        size--;
+        return data;
     }
+
+    //deletion from rear
+    public int deleteRear(){
+        if(isEmpty()) {
+            System.out.println("Queue is empty");
+            return -1;
+        }
+            int data=arr[rear];
+        if(front==rear){
+            front=-1;
+            rear=-1;
+
+            }
+        else if(rear==0){
+            rear=capacity-1;
+        }
+        else{
+            rear--;
+        }
+        size--;
+        return data;
+    }
+
+
 
 
 
