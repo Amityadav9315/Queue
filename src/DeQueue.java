@@ -107,6 +107,34 @@ public class DeQueue {
         return data;
     }
 
+     public int getFront(){
+        if(isEmpty()){
+            System.out.println("Queue is empty");
+            return -1;
+        }
+        return  arr[rear];
+     }
+     public int getRear(){
+        if(isEmpty()){
+            System.out.println("Queue is empty");
+            return -1;
+        }
+        return  arr[rear];
+     }
+     public void display(){
+        if(isEmpty()){
+            System.out.println("Queue is empty");
+            return;
+
+        }
+        for(int i=0; i<size; i++ ){
+            System.out.print(arr[(front+i)%capacity]+"\t");
+
+
+         }
+         System.out.println();
+
+     }
 
 
 
