@@ -31,8 +31,23 @@ public class DeQueue {
         //check : full
         if(isFull()){
             System.out.println("Queue is full");
+            return;
         }
+        if(isEmpty()){
+            front=0;
+            rear=0;
+        }
+
+        else if(front==0){
+            front=capacity-1;
+        }
+        else{
+            front--;
+        }
+        arr[front]=data;
+        size++;
     }
+
 
 
 
