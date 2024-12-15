@@ -15,7 +15,24 @@ public class DeQueue {
         rear=-1;
         size=0;
     }
+    public boolean isFull(){
+        return size==capacity;
 
+
+
+
+    }
+
+    //check if queue is empty or not
+    public boolean isEmpty(){
+        return size==0;
+    }
+    public void insertFront(int data){
+        //check : full
+        if(isFull()){
+            System.out.println("Queue is full");
+        }
+    }
 
 
 
