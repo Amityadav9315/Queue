@@ -19,8 +19,8 @@ public class DequeueTest {
         deQueue.insertFront(23);
         deQueue.deleteFront();
         deQueue.display();
-        deQueue.insertRear(54)
-        ;
+        deQueue.insertRear(54);
+        deQueue.display();
 
     }
 }
