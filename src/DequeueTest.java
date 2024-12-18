@@ -16,6 +16,8 @@ public class DequeueTest {
         deQueue.deleteFront();
         deQueue.display();
         System.out.println("size :"+deQueue.size());
+        deQueue.insertFront(23);
+        deQueue.deleteFront();
 
     }
 }
