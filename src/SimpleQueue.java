@@ -47,7 +47,7 @@ public class SimpleQueue {
     //Display
     public void display(){
         if(front>rear){
-            System.out.println("Queue is empty..");
+            System.out.println("Queue is empty....");
             return;
         }
         for(int i=front; i<=rear; i++) {
