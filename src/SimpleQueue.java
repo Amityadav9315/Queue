@@ -49,7 +49,7 @@ public class SimpleQueue {
         if(front>rear){
             System.out.println("Queue is empty....");
 
-            System.out.println( jkjkjk);
+            System.out.println( );
         }
         for(int i=front; i<=rear; i++) {
             System.out.print(queue[i] +"\t");
